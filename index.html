@@ -10,7 +10,7 @@
         /* Basic styles */
         body {
             font-family: 'Open Sans', sans-serif;
-            padding: 50px 0;
+            margin: 0;
             text-align: center;
             background-color: black; /* Changed background to black */
             color: #fff; /* Changed text color to white */
@@ -21,11 +21,13 @@
 
         .container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: auto;
             padding: 0 20px;
             display: flex;
             flex-direction: column;
-            gap: 50px;
+            gap: 20px;
+            justify-content: space-between;
+            height: 100%;
         }
 
         header, footer {
@@ -43,7 +45,6 @@
         }
 
         footer {
-            margin-top: auto;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -63,10 +64,6 @@
 
         /* Responsive styles for mobile screens */
         @media (max-width: 768px) {
-            body {
-                padding: 20px 0;
-            }
-
             .container {
                 padding: 0 10px;
             }
@@ -91,11 +88,6 @@
             <h1>PolarTech Test - Pet24 Virtuaalne Klienditugi</h1>
         </header>
 
-        <!-- GIF Container -->
-        <div class="gif-container">
-            <img src="https://i.pinimg.com/originals/bc/1c/4e/bc1c4eb282f3f00e950ab1b9945bd41e.gif" alt="GIF">
-        </div>
-      
         <!-- Placeholder for your chatbot integration -->
         <script type="text/javascript">
             (function(d, t) {
@@ -110,6 +102,11 @@
                 v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
             })(document, 'script');
         </script>
+
+        <!-- GIF Container -->
+        <div class="gif-container">
+            <img src="https://i.pinimg.com/originals/bc/1c/4e/bc1c4eb282f3f00e950ab1b9945bd41e.gif" alt="GIF">
+        </div>
       
         <footer>
             <p><strong>Kontakt:</strong></p>
