@@ -12,9 +12,7 @@
             font-family: 'Open Sans', sans-serif;
             padding: 50px 0;
             text-align: center;
-            background-image: url('https://i.pinimg.com/originals/98/3b/63/983b63592a42295d638b4b3120df9cc8.gif');
-            background-repeat: no-repeat;
-            background-size: cover;
+            background-color: black; /* Changed background to black */
             color: #333;
             display: flex;
             flex-direction: column;
@@ -52,33 +50,16 @@
             gap: 10px;
         }
 
-        .vfrc-widget--launcher::before {
-            content: 'Tere, olen Pet24 Virtuaalne Klienditugi!🐶';
-            display: block;
-            position: absolute;
-            bottom: calc( 100% + 20px);
-            right: 0;
-            width: 200px;
-            padding: 10px;
-            font-size: 14px;
-            border-radius: 5px;
-            background-color: #17ad6b;
-            color: #ffffff;
-            filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
+        /* Added styles for the GIF */
+        .gif-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        .vfrc-widget--launcher::after {
-            content: '';
-            display: block;
-            position: absolute;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 10px 10px 0;
-            border-color: #17ad6b transparent transparent transparent;
-            bottom: calc( 100% + 20px);
-            right: 30px;
-            transform: translate(50%, 100%);
+        .gif-container img {
+            max-width: 200px; /* Adjust the size of the GIF */
+            border-radius: 10px;
         }
 
         /* Responsive styles for mobile screens */
@@ -107,20 +88,10 @@
             <h1>PolarTech Test - Pet24 Virtuaalne Klienditugi</h1>
         </header>
       
-        <!-- Placeholder for your chatbot integration -->
-        <script type="text/javascript">
-  (function(d, t) {
-      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-      v.onload = function() {
-        window.voiceflow.chat.load({
-          verify: { projectID: '6538cccb38d845000705306d' },
-          url: 'https://general-runtime.voiceflow.com',
-          versionID: 'production'
-        });
-      }
-      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-  })(document, 'script');
-</script>
+        <!-- Added GIF container -->
+        <div class="gif-container">
+            <img src="https://i.pinimg.com/originals/98/3b/63/983b63592a42295d638b4b3120df9cc8.gif" alt="GIF">
+        </div>
       
         <footer>
             <p><strong>Kontakt:</strong></p>
