@@ -1,85 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PolarTech Testing</title>
+    <title>PolarTech Testing - Pet24 Virtuaalne Klienditugi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        /* Basic styles for centering and padding */
+        /* Basic styles */
         body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
+            font-family: 'Open Sans', sans-serif;
+            padding: 50px 0;
             text-align: center;
+            background-color: #333; /* Use a solid color as a fallback */
+            background-image: url('https://img.freepik.com/free-vector/minimalist-white-background-with-neumorphic-circle_1017-39167.jpg?w=2000&t=st=1697547724~exp=1697548324~hmac=2cc12c9228f7dbc8e65a2281d1f96a5008ccfcb087fbcc1e153a64cce9c12102');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
-        footer {
-            position: absolute;
-            bottom: 20px;
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            align-items: center; /* Center items */
+        }
+
+        header, footer {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 2.5em;
+            color: #2c3e50;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Adding GIF centering styles */
+        .gif-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px; /* Adjust height as per requirement */
             width: 100%;
+            margin-bottom: 50px;
+        }
+
+        .gif-container img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        footer {
+            margin-top: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Other styles continue... */
+
+        @media (max-width: 768px) {
+            /* ... */
         }
     </style>
-
-    <style>
-
-    .vfrc-widget--launcher::before {
-
-        content: 'Tere, olen Pet24 Virtuaalne Klienditugi!🐶';
-        display: block;
-        position: absolute;
-        bottom: calc( 100% + 20px);
-        right: 0;
-        width: 200px;
-        padding: 10px;
-        font-size: 14px;
-        border-radius: 5px;
-        background-color: #17ad6b;
-        color: #ffffff;
-        filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
-
-    }
-
-    .vfrc-widget--launcher::after {
-
-        content: '';
-        display: block;
-        position: absolute;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 10px 10px 0;
-        border-color: #17ad6b transparent transparent transparent;
-        bottom: calc( 100% + 20px);
-        right: 30px;
-        transform: translate(50%, 100%);
-
-    }
-
-</style>
 </head>
+
 <body>
-    <h1>PolarTech Testing - Pet24 Virtuaalne Klienditugi</h1>
-  
+    <div class="container">
+        <header>
+            <!-- Place header contents here -->
+        </header>
 
-    <!-- Placeholder for your chatbot integration -->
-<script type="text/javascript">
-  (function(d, t) {
-      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-      v.onload = function() {
-        window.voiceflow.chat.load({
-          verify: { projectID: '652cf82bb7abb70008970b62' },
-          url: 'https://general-runtime.voiceflow.com',
-          versionID: 'production'
-        });
-      }
-      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-  })(document, 'script');
-</script>
-  
+        <div class="gif-container">
+            <img src="https://cdn.discordapp.com/attachments/1091680076107620464/1167733673899065385/a59078e23ffbff71e371fc2d04ca1855.gif?ex=654f33bb&is=653cbebb&hm=446af4726a655b1d3df7f0ae286732a116e095aca13db53bbad8776a14396bb5&" alt="Centerpiece GIF">
+        </div>
 
-    <footer>
-        <p>Kontakt:</p>
-        <p>PolarTech</p>
-        <p>Email: polartechai@gmail.com</p>
-        <p>Telefon: +372 529 4950</p>
-    </footer>
+        <!-- Additional data/content goes here -->
+
+        <footer>
+            <!-- Footer content -->
+        </footer>
+    </div>
 </body>
+
 </html>
+
